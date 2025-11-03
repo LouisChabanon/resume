@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Louis Chabanon - Profile</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Inter Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 min-h-screen flex items-center justify-center p-4">
+
+    <!-- Main Card -->
+    <div class="bg-white shadow-xl rounded-2xl p-8 sm:p-12 max-w-lg w-full transform transition-all hover:shadow-2xl">
+        
+        <!-- Profile Picture Placeholder -->
+        <img 
+            src="assets/profile_picture.png" 
+            alt="Profile Picture"
+            class="w-32 h-32 rounded-full mx-auto mb-6 border-4 border-indigo-100 shadow-lg"
+            onerror="this.src='https://placehold.co/128x128?text=Error'"
+        >
+
+        <!-- Name -->
+        <h1 class="text-3xl font-bold text-center text-gray-800 mb-2">
+            Louis Chabanon
+        </h1>
+
+        <!-- Title / Subheading -->
+        <p class="text-lg text-indigo-600 text-center mb-6 font-medium">
+            Etudiant en 2ème année aux Arts et Métiers
+        </p>
+
+        <!-- Brief Bio -->
+        <p class="text-gray-600 text-center mb-8">
+            Étudiant en deuxième année aux Arts et Métiers sur le campus de Metz, je cherche un stage de fin d'étude d'une durée de 6 mois dans le secteur de l'énergie et du numérique.
+        </p>
+
+        <!-- Links Section -->
+        <div class="flex flex-col sm:flex-row gap-4">
+        
+            <a 
+                href="assets/resume-fr-chabanon.pdf" 
+                download
+                target="_blank"
+                class="flex-1 bg-indigo-600 text-white font-medium py-3 px-5 rounded-lg text-center hover:bg-indigo-700 transition duration-300 shadow-md focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-opacity-50"
+            >
+                Télécharger mon cv (PDF)
+            </a>
+            
+            <a 
+                href="https://www.linkedin.com/in/louischabanon" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                class="flex-1 bg-white text-indigo-600 border-2 border-indigo-600 font-medium py-3 px-5 rounded-lg text-center hover:bg-gray-50 transition duration-300 shadow-md focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-opacity-50"
+            >
+                Voir mon profil Linked-In
+            </a>
+
+        </div>
+
+        <!-- Footer -->
+        <p class="text-center text-gray-400 text-xs sm:text-sm mt-8">
+            Merci de votre visite !
+        </p>
+    </div>
+
+</body>
+</html>
